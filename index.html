@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ar="موقع عبدالرحمن الشخصي" data-en="Abdulrahman's Portfolio">موقع عبدالرحمن الشخصي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Language & Theme Switchers -->
+    <div class="top-controls">
+        <div class="theme-switcher">
+            <button class="theme-btn" id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon" data-ar-title="تغيير المظهر" data-en-title="Toggle Theme"></i>
+            </button>
+        </div>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="ar">العربية</button>
+            <button class="lang-btn" data-lang="en">English</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo" data-ar="موقع عبدالرحمن الشخصي" data-en="Abdulrahman's Portfolio">موقع عبدالرحمن الشخصي</div>
+            <ul class="nav-links">
+                <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="#about" data-ar="عني" data-en="About">عني</a></li>
+                <li><a href="#skills" data-ar="مهاراتي" data-en="Skills">مهاراتي</a></li>
+                <li><a href="#projects" data-ar="مشاريعي" data-en="Projects">مشاريعي</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars" data-ar-title="القائمة" data-en-title="Menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-ar="مرحباً بكم في موقع عبدالرحمن الشخصي" data-en="Welcome to Abdulrahman's Portfolio">مرحباً بكم في موقع عبدالرحمن الشخصي</h1>
+                <p class="subtitle" data-ar="مطور ومبرمج متعدد المهارات" data-en="Multi-skilled Developer & Programmer">مطور ومبرمج متعدد المهارات</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="cta-button primary" data-ar="تعرف علي" data-en="About Me">تعرف علي</a>
+                    <a href="#projects" class="cta-button secondary" data-ar="مشاريعي" data-en="My Projects">مشاريعي</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-ar="عني" data-en="About Me">عني</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile.png" alt="Profile Picture" data-ar-alt="الصورة الشخصية" data-en-alt="Profile Picture">
+                </div>
+                <div class="about-text">
+                    <p data-ar="مرحباً، أنا عبدالرحمن الزهراني، مبرمج شغوف بعمر 16 عاماً. متخصص في تطوير البرمجيات وأمن المعلومات وإدارة الشبكات والخوادم. أمتلك خبرة في العديد من مجالات تقنية المعلومات، من البرمجة إلى الأمن السيبراني." 
+                       data-en="Hi, I'm Abdulrahman Al-Zahrani, a 16-year-old passionate programmer. Specialized in software development, information security, and network & server administration. I have experience in various IT fields, from programming to cybersecurity.">
+                        مرحباً، أنا عبدالرحمن الزهراني، مبرمج شغوف بعمر 16 عاماً. متخصص في تطوير البرمجيات وأمن المعلومات وإدارة الشبكات والخوادم. أمتلك خبرة في العديد من مجالات تقنية المعلومات، من البرمجة إلى الأمن السيبراني.
+                    </p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <i class="fas fa-user" data-ar-title="الاسم" data-en-title="Name"></i>
+                            <div class="info-text">
+                                <span data-ar="الاسم" data-en="Name">الاسم</span>
+                                <span data-ar="عبدالرحمن الزهراني" data-en="Abdulrahman Al-Zahrani">عبدالرحمن الزهراني</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt" data-ar-title="الموقع" data-en-title="Location"></i>
+                            <div class="info-text">
+                                <span data-ar="الموقع" data-en="Location">الموقع</span>
+                                <span data-ar="الرياض، المملكة العربية السعودية" data-en="Riyadh, Saudi Arabia">الرياض، المملكة العربية السعودية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-ar="مهاراتي" data-en="My Skills">مهاراتي</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-ar="البرمجة والتطوير" data-en="Programming & Development">البرمجة والتطوير</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-code" data-ar-title="لغات البرمجة" data-en-title="Programming Languages"></i>
+                            <span data-ar="8 لغات برمجة" data-en="8 Programming Languages">8 لغات برمجة</span>
+                            <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database" data-ar-title="قواعد البيانات" data-en-title="Databases"></i>
+                            <span data-ar="هندسة قواعد البيانات" data-en="Database Engineering">هندسة قواعد البيانات</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-ar="الشبكات والخوادم" data-en="Networks & Servers">الشبكات والخوادم</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired" data-ar-title="الشبكات" data-en-title="Networks"></i>
+                            <span data-ar="هندسة وتصميم الشبكات" data-en="Network Engineering & Design">هندسة وتصميم الشبكات</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server" data-ar-title="الخوادم" data-en-title="Servers"></i>
+                            <span data-ar="إدارة الخوادم" data-en="Server Administration">إدارة الخوادم</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-ar="الأمن السيبراني ولينكس" data-en="Cybersecurity & Linux">الأمن السيبراني ولينكس</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt" data-ar-title="الأمن السيبراني" data-en-title="Cybersecurity"></i>
+                            <span data-ar="الأمن الهجومي" data-en="Offensive Security">الأمن الهجومي</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux" data-ar-title="لينكس" data-en-title="Linux"></i>
+                            <span data-ar="آرتش لينكس" data-en="Arch Linux">آرتش لينكس</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-ar="مشاريعي" data-en="My Projects">مشاريعي</h2>
+            <div class="coming-soon">
+                <i class="fas fa-clock" data-ar-title="قريباً" data-en-title="Coming Soon"></i>
+                <h3 data-ar="قريباً" data-en="Coming Soon">قريباً</h3>
+                <p data-ar="سيتم عرض المشاريع قريباً" data-en="Projects will be available soon">سيتم عرض المشاريع قريباً</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank" data-ar-title="جيثب" data-en-title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" data-ar-title="لينكد إن" data-en-title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" data-ar-title="تويتر" data-en-title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copyright" data-ar="جميع الحقوق محفوظة" data-en="All Rights Reserved">&copy; 2024 - <span data-ar="جميع الحقوق محفوظة" data-en="All Rights Reserved">جميع الحقوق محفوظة</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
