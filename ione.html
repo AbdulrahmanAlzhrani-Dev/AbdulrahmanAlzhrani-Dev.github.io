@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="iONE — Enterprise Computing Architecture. Architecture, security model, OSP components, and foundational specification.">
+  <meta name="theme-color" content="#071019">
+  <title>iONE | Enterprise Computing Architecture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="ione-page">
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">i</span><span class="brand-name">iONE</span></a>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a class="nav-link active" href="#overview" data-ar="نظرة عامة" data-en="Overview">نظرة عامة</a>
+        <a class="nav-link" href="#architecture" data-ar="المعمارية" data-en="Architecture">المعمارية</a>
+        <a class="nav-link" href="#security" data-ar="الأمن" data-en="Security">الأمن</a>
+        <a class="nav-link" href="#components" data-ar="المكونات" data-en="Components">المكونات</a>
+        <a class="nav-link" href="#document" data-ar="الوثيقة" data-en="Document">الوثيقة</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="lang-toggle" id="lang-toggle" type="button"><span>EN</span></button>
+        <button class="menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="ione-hero section" id="overview">
+      <div class="container ione-hero-grid">
+        <div class="reveal">
+          <div class="eyebrow"><span class="status-dot"></span><span data-ar="مشروع قيد التطوير · Architecture v0.1" data-en="In development · Architecture v0.1">مشروع قيد التطوير · Architecture v0.1</span></div>
+          <div class="ione-page-title"><span>i</span>ONE</div>
+          <p class="ione-subtitle" data-ar="Operating System Platform for Enterprise" data-en="Operating System Platform for Enterprise">Operating System Platform for Enterprise</p>
+          <p class="hero-lead" data-ar="iONE ليست محاولة لبناء نظام تشغيل تقليدي فقط؛ الوثيقة التأسيسية تصفها كمنظومة حوسبة مؤسسية متكاملة توحّد العتاد والمنصة والأمن والعزل والصلاحيات والبرمجة والبيانات والشبكات والتطبيقات ضمن معمارية واحدة." data-en="iONE is not defined merely as a traditional operating system. Its foundational specification describes an integrated enterprise computing architecture that unifies hardware, platform, security, isolation, permissions, programming, data, networking, and applications under one architecture.">iONE ليست محاولة لبناء نظام تشغيل تقليدي فقط؛ الوثيقة التأسيسية تصفها كمنظومة حوسبة مؤسسية متكاملة توحّد العتاد والمنصة والأمن والعزل والصلاحيات والبرمجة والبيانات والشبكات والتطبيقات ضمن معمارية واحدة.</p>
+          <div class="ione-page-actions"><a class="btn btn-primary" href="docs/iONE-Enterprise-Architecture-Specification.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span data-ar="فتح الوثيقة" data-en="Open specification">فتح الوثيقة</span></a><a class="btn btn-ghost" href="index.html#projects"><span data-ar="العودة للمشاريع" data-en="Back to projects">العودة للمشاريع</span></a></div>
+          <div class="ione-meta-row"><span><b>STATUS</b> In Development</span><span><b>VERSION</b> 0.1</span><span><b>MODEL</b> Closed Architecture</span></div>
+        </div>
+        <div class="ione-hero-panel reveal delay-1">
+          <div class="panel-code">IONE / OSP / TRUST MODEL</div>
+          <div class="trust-stack">
+            <div><strong>Hardware Root of Trust</strong><small>Hardware Identity · Secure Boot</small></div><i>↓</i>
+            <div><strong>OSP Trusted Core</strong><small>Trusted execution · resource foundations</small></div><i>↓</i>
+            <div><strong>iOBJ + iPS</strong><small>Objects · capabilities · policy enforcement</small></div><i>↓</i>
+            <div><strong>Enterprise Services</strong><small>PLE · DBE · VM · Container</small></div><i>↓</i>
+            <div><strong>Applications / External Systems</strong><small>Controlled integration boundaries</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ione-principles-section" id="architecture">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-kicker">CORE PHILOSOPHY</span><h2 data-ar="المعمارية تبدأ من نموذج ثقة موحّد." data-en="The architecture starts with a unified trust model.">المعمارية تبدأ من نموذج ثقة موحّد.</h2></div>
+        <div class="principles-grid">
+          <article class="principle"><span>01</span><h3>Everything is an iONE Object</h3><p data-ar="المستخدم والتطبيق والخدمة وقاعدة البيانات والملف والـVM والموارد والسياسات يمكن تمثيلها ضمن نموذج Object موحد يحمل الهوية والسياسات والحالة ودورة الحياة." data-en="Users, applications, services, databases, files, VMs, resources, and policies are represented through a unified Object model carrying identity, policy, state, and lifecycle.">المستخدم والتطبيق والخدمة وقاعدة البيانات والملف والـVM والموارد والسياسات يمكن تمثيلها ضمن نموذج Object موحد يحمل الهوية والسياسات والحالة ودورة الحياة.</p></article>
+          <article class="principle"><span>02</span><h3>Everything is Isolated</h3><p data-ar="العزل مبدأ معماري يشمل التطبيقات والخدمات والحاويات والـVM والـAI والـTerminal، مع حدود واضحة للموارد والاتصال والصلاحيات." data-en="Isolation is an architectural principle spanning applications, services, containers, VMs, AI, and the terminal, with explicit resource, communication, and authority boundaries.">العزل مبدأ معماري يشمل التطبيقات والخدمات والحاويات والـVM والـAI والـTerminal، مع حدود واضحة للموارد والاتصال والصلاحيات.</p></article>
+          <article class="principle"><span>03</span><h3>Nothing is Trusted by Default</h3><p data-ar="الثقة لا تُستنتج من كون المكوّن داخليًا أو إداريًا؛ يجب أن تكون صريحة وتُتحقق ضمن السياق والسياسة والقدرات." data-en="Trust is not inferred from being internal or administrative; it must be explicit and evaluated through context, policy, and capabilities.">الثقة لا تُستنتج من كون المكوّن داخليًا أو إداريًا؛ يجب أن تكون صريحة وتُتحقق ضمن السياق والسياسة والقدرات.</p></article>
+          <article class="principle"><span>04</span><h3>Every Action is Authorized</h3><p data-ar="النموذج المركزي للوصول هو Identity → Capability → Policy → Object → Operation، وليس مجرد إثبات الهوية." data-en="The central access model is Identity → Capability → Policy → Object → Operation rather than authentication alone.">النموذج المركزي للوصول هو Identity → Capability → Policy → Object → Operation، وليس مجرد إثبات الهوية.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ione-components-section" id="components">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="section-kicker">OSP COMPONENTS</span><h2 data-ar="مكوّنات المنصة كما تصفها الوثيقة" data-en="Platform components defined by the specification">مكوّنات المنصة كما تصفها الوثيقة</h2></div>
+        <div class="component-grid">
+          <article class="component"><b>iOBJ</b><h3>Object Architecture</h3><p>Unified object identity, owner, security domain, capabilities, policy, state, resources, audit identity, and lifecycle.</p></article>
+          <article class="component"><b>iPS</b><h3>Permission System</h3><p>Enforcement layer that evaluates actor, operation, object, security context, policy, and capability.</p></article>
+          <article class="component"><b>iPME</b><h3>Permission Management Enterprise</h3><p>Management of users, roles, capabilities, policies, domains, devices, VMs, containers, auditing, and delegation.</p></article>
+          <article class="component"><b>PLE</b><h3>Program Language Enterprise</h3><p>Proposed native enterprise-first language with memory safety, strong typing, concurrency, secure IPC, capabilities, and transactions.</p></article>
+          <article class="component"><b>DBE</b><h3>DataBase Enterprise</h3><p>Native database architecture integrated with iOBJ, iPS, PLE, auditing, transactions, storage, and enterprise services.</p></article>
+          <article class="component"><b>iAE</b><h3>AI Enterprise</h3><p>AI-assisted detection and analysis layer; it may detect and recommend, but does not receive security sovereignty.</p></article>
+          <article class="component"><b>Web Connector</b><h3>External Integration</h3><p>Controlled boundary for external systems with authentication, authorization, identity mapping, encryption, validation, and auditing.</p></article>
+          <article class="component"><b>Container / VM</b><h3>Isolation Boundaries</h3><p>Application and stronger execution boundaries with explicit identity, domains, resource, storage, network, and capability controls.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ione-security-section" id="security">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-kicker">SECURITY ARCHITECTURE</span><h2 data-ar="الأمن ليس طبقة إضافية؛ هو جزء من المعمارية." data-en="Security is not an add-on; it is part of the architecture.">الأمن ليس طبقة إضافية؛ هو جزء من المعمارية.</h2></div>
+        <div class="security-layout">
+          <div class="security-list reveal">
+            <div><span>01</span><strong>Hardware Root of Trust</strong><p>Secure Boot, measured boot, hardware-backed identity, secure elements, attestation, and protected memory are part of the proposed server architecture.</p></div>
+            <div><span>02</span><strong>Deterministic Permission Enforcement</strong><p>iPS enforces authority while iPME manages policy and permissions. Authentication alone does not grant authority.</p></div>
+            <div><span>03</span><strong>AI without Security Sovereignty</strong><p>iAE observes, analyzes, detects, predicts, and recommends; final enforcement remains with iPS and security policies.</p></div>
+            <div><span>04</span><strong>Path Destroyer</strong><p>A proposed critical lockdown mechanism that can isolate the network, revoke active credentials, freeze permissions, and activate a recovery network.</p></div>
+          </div>
+          <div class="security-quote reveal delay-1"><span>TRUST CHAIN</span><div>Physical Hardware</div><i>↓</i><div>Hardware Identity</div><i>↓</i><div>Secure Boot</div><i>↓</i><div>Trusted OSP</div><i>↓</i><div>iPS</div><i>↓</i><div>Trusted Application</div><i>↓</i><div>iONE Object</div><i>↓</i><div>Capability → Authorized Operation</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section document-section" id="document">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-kicker">FOUNDATIONAL SPECIFICATION</span><h2 data-ar="وثيقة iONE المعمارية" data-en="iONE Architecture Specification">وثيقة iONE المعمارية</h2><p class="section-intro" data-ar="هذه هي الوثيقة التأسيسية للإصدار 0.1. وهي تحدد فلسفة iONE وحدودها ومكوّناتها الأساسية، بينما تبقى المواصفة التنفيذية التفصيلية مرحلة لاحقة." data-en="This is the foundational v0.1 document. It defines iONE's philosophy, boundaries, and core components; detailed implementation specifications are a later stage.">هذه هي الوثيقة التأسيسية للإصدار 0.1. وهي تحدد فلسفة iONE وحدودها ومكوّناتها الأساسية، بينما تبقى المواصفة التنفيذية التفصيلية مرحلة لاحقة.</p></div>
+        <div class="document-toolbar"><span><i class="fa-solid fa-file-pdf"></i> iONE-Enterprise-Architecture-Specification.pdf</span><a class="btn btn-primary" href="docs/iONE-Enterprise-Architecture-Specification.pdf" download><i class="fa-solid fa-download"></i><span data-ar="تحميل الوثيقة" data-en="Download document">تحميل الوثيقة</span></a></div>
+        <div class="pdf-frame reveal"><iframe src="docs/iONE-Enterprise-Architecture-Specification.pdf#view=FitH" title="iONE Enterprise Architecture Specification"></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><div><strong>iONE</strong><span data-ar="Enterprise Computing Architecture · In Development" data-en="Enterprise Computing Architecture · In Development">Enterprise Computing Architecture · In Development</span></div><div><a href="index.html" class="github-link"><i class="fa-solid fa-arrow-right"></i><span data-ar="العودة للموقع الشخصي" data-en="Back to portfolio">العودة للموقع الشخصي</span></a></div><p>© <span id="year"></span> Abdulrahman Al-Zahrani</p></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
